@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width", initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: cornsilk;
+      }
+      #div {
+        background-color: pink;
+      }
+      #div1 {
+        text-decoration-line: underline;
+        text-decoration-color: dark blue;
+        text-align: center;
+        text-decoration-style: wavy;
+      }
+      #div3 {
+        justify-content: center;
+        width: 250px;
+        height: 250px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+
+      .home {
+        display: flex;
+      }
+      #div4 {
+        padding-left: 25px;
+      }
+      .di {
+        background-color: lightblue;
+        width: 500px;
+        height: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid black;
+      }
+      #dii {
+          background-color: orange;
+          position: absolute;
+          width: 150px;
+          height: 150px;
+          border-radius: 150px;
+          animation: bounce is infinite alternate, moveforward 2s linear infinte;
+      }
+      
+      @keyframes changecolor {
+        0% 
+       {
+          background-color: yellow;
+          bottom: 0;
+          transform: rotate(45deg);
+        }
+        50% {
+          background-color: orange;
+          
+          bottom: 200;
+          transform: rotate(-45deg);
+        }
+        100% {
+          top: 10rem;
+          left: 50%;
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Para">
+      <div id="div">
+        <div id="div1">
+          <h1>Welcome to my webpage</h1>
+        </div>
+        <div id="div">
+          <p>
+            In publishing and graphic design, Lorem ipsum (/ˌlɔrəm .ɪp.səm/) .
+            It is a placeholder text commonly used to demonstrate the visual
+            form of a document or a typeface without relying on meaningful
+            content. Lorem ipsum may be used as a placeholder before the final
+            copy is available. It is also used to temporarily replace text in a
+            process called greeking, which allows designers to consider the form
+            of a webpage or publication, without the meaning of the text
+            influencing the design.
+          </p>
+          <div id="div3">
+          <img
+            src="images(1).png"
+            alt="error"
+            style="
+              border-width: 10px;
+              border-top: 20px;
+              border-end-end-radius: 50px;
+              border-top-left-radius: 50px;
+              border-bottom-left-radius: 50px;
+              border-start-end-radius: 50px;
+            "
+          />
+        </div>
+        <div class="home">
+        <div id="div4">
+          <p>
+            In publishing and graphic design, Lorem ipsum (/ˌlɔrəm .ɪp.səm/) .
+            It is a placeholder text commonly used to demonstrate the visual
+            form of a document or a typeface without relying on meaningful
+            content. Lorem ipsum may be used as a placeholder before the final
+            copy is available. It is also used to temporarily replace text in a
+            process called greeking, which allows designers to consider the form
+            of a webpage or publication, without the meaning of the text
+            influencing the design.
+          </p>
+          <img
+            src="images(1).png"
+            alt="error"
+            style="
+              border-width: 10px;
+              border-style: solid;
+              border-bottom-left-radius: 50px;
+              border-end-end-radius: 50px;
+              
+              border-start-end-radius: 50px;
+              border-top-left-radius: 50px;
+              margin-right: 10px;
+            "
+          />
+        </div>
+      </section>
+      </div>
+      <div class="di">
+        <div class="dii"> 
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
