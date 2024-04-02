@@ -24,8 +24,6 @@
         margin-left: auto;
         margin-right: auto;
       }
-      
-
       .home {
         display: flex;
       }
@@ -36,6 +34,7 @@
         background-color: lightblue;
         width: 500px;
         height: 500px;
+        padding-right: 1000px;
         margin-left: auto;
         margin-right: auto;
         border: 1px solid black;
@@ -48,24 +47,25 @@
           border-radius: 150px;
           animation: bounce is infinite alternate, moveforward 2s linear infinte;
       }
-      
-      @keyframes changecolor {
-        0% 
-       {
-          background-color: yellow;
+      @keyframes  bounce {
+        0%,
+        100% {
           bottom: 0;
+          background-color: yellow;
           transform: rotate(45deg);
         }
         50% {
-          background-color: orange;
-          
           bottom: 200;
+          background-color: orange;
           transform: rotate(-45deg);
         }
-        100% {
-          top: 10rem;
-          left: 50%;
-          transform: rotate(360deg);
+      }
+      @keyframes moveforward {
+        0%{
+          left:0;
+        }
+        100%{
+          left: calc(100% - 50%);
         }
       }
     </style>
@@ -76,7 +76,32 @@
         <div id="div1">
           <h1>Welcome to my webpage</h1>
         </div>
-        <div id="div">
+         <p id="div4">
+            In publishing and graphic design, Lorem ipsum (/ˌlɔrəm .ɪp.səm/) .
+            It is a placeholder text commonly used to demonstrate the visual
+            form of a document or a typeface without relying on meaningful
+            content. Lorem ipsum may be used as a placeholder before the final
+            copy is available. It is also used to temporarily replace text in a
+            process called greeking, which allows designers to consider the form
+            of a webpage or publication, without the meaning of the text
+            influencing the design.
+          </p>
+          <div id="div3">
+          <img
+            src="./images/images.png"
+            alt="error"
+            style="
+              border-width: 10px;
+              border-top: 20px;
+              border-end-end-radius: 50px;
+              border-top-left-radius: 50px;
+              border-bottom-left-radius: 50px;
+              border-start-end-radius: 50px;
+            "
+            />
+        </div>
+        <section class="home">
+        <div id="div4">
           <p>
             In publishing and graphic design, Lorem ipsum (/ˌlɔrəm .ɪp.səm/) .
             It is a placeholder text commonly used to demonstrate the visual
@@ -89,41 +114,15 @@
           </p>
           <div id="div3">
           <img
-            src="images(1).png"
-            alt="error"
-            style="
-              border-width: 10px;
-              border-top: 20px;
-              border-end-end-radius: 50px;
-              border-top-left-radius: 50px;
-              border-bottom-left-radius: 50px;
-              border-start-end-radius: 50px;
-            "
-          />
-        </div>
-        <div class="home">
-        <div id="div4">
-          <p>
-            In publishing and graphic design, Lorem ipsum (/ˌlɔrəm .ɪp.səm/) .
-            It is a placeholder text commonly used to demonstrate the visual
-            form of a document or a typeface without relying on meaningful
-            content. Lorem ipsum may be used as a placeholder before the final
-            copy is available. It is also used to temporarily replace text in a
-            process called greeking, which allows designers to consider the form
-            of a webpage or publication, without the meaning of the text
-            influencing the design.
-          </p>
-          <img
-            src="images(1).png"
+            src="./images/images.png"
             alt="error"
             style="
               border-width: 10px;
               border-style: solid;
-              border-bottom-left-radius: 50px;
               border-end-end-radius: 50px;
-              
-              border-start-end-radius: 50px;
               border-top-left-radius: 50px;
+              border-start-end-radius: 50px;
+              border-bottom-left-radius: 50px;
               margin-right: 10px;
             "
           />
@@ -131,8 +130,8 @@
       </section>
       </div>
       <div class="di">
-        <div class="dii"> 
-          </div>
+        <div class="dii"></div> 
+        </div>
       </div>
     </div>
   </body>
